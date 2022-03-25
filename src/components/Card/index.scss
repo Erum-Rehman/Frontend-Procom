@@ -1,0 +1,15 @@
+@import '../../../src//responsive.scss';
+
+.card {
+    margin: 5px 3px 15px;
+    cursor: pointer;
+}
+.card-title {
+    padding: 8px ;
+    font-size: 14px;
+}
+.card-options {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px
+}

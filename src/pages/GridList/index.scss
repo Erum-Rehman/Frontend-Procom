@@ -1,0 +1,30 @@
+@import '../../../src//responsive.scss';
+
+.grid-container{
+    &__items {
+        height: 100vh;
+        border-radius: 5px;
+        background-color: beige;
+        margin-top: 5px;
+    }
+}
+.gridHead {
+    display: flex;
+    margin: 50px 40px 0;
+    justify-content: space-between;
+    Button {
+        margin-left: 10px;
+    }
+}
+.thumbnail {
+    border-radius: 50%;
+    height: 100%;
+    border: 1px solid lightgray;
+    width: 51px;
+    text-align: center;
+    padding: 5px;
+}
+.addGrp {
+    display: flex;
+    justify-content: right;
+}

@@ -1,0 +1,11 @@
+@import '../../../src//responsive.scss';
+
+.grid-container {
+    border: 1px solid lightgrey;
+    width: 25%;
+    margin: 0px 10px;
+}
+.GridBar {
+    display: flex;
+    margin: 30px;
+}

@@ -1,0 +1,100 @@
+@import '../../../src//responsive.scss';
+
+.Login-page {
+    display: flex;
+    margin: 100px auto;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    flex-direction: column;
+    @include respond-to(mobile-small) {
+        width: 90%;
+       }
+       @include respond-to(tablet-mini) {
+        width: 80%;
+       }
+}
+.login-cell {
+    margin-bottom: 25px;
+    position: relative;
+}
+.login-field {
+    width: 100%;
+    height: 50px;
+    padding: 0 20px;
+    line-height: 50px;
+    border: 1px solid#eee;
+    margin-top: 4px ;
+    border-radius: 5px;
+}
+.login-btn {
+    display: flex;
+    width: 55%;
+    justify-content: center;
+    align-items: center;
+    @include respond-to(mobile-small) {
+        flex-direction: column;
+        width: 65%;
+       }
+}
+.butn-field {
+    box-shadow: 4px 8px 30px rgba(141, 141, 141, 0.1);
+    margin-bottom: 15px;
+    padding: 16px 75px;
+    border: none!important;
+    background-color: white;
+    color: #848484!important;
+    font-size: 20px;
+    font-weight: 600;
+    width: 100%;
+    margin: 0 6px;
+    border-radius: 5px;
+    @include respond-to(mobile-small) {
+        margin-bottom: 15px;
+       }
+    &:last-child{
+        margin-bottom: 0;
+    }
+    @include respond-to(mobile-small) {
+        padding: 16px 57px;
+       }
+    &:hover {
+        color: white!important;
+        background-color: #f96822!important;
+    }
+    &:focus {
+        background-color: #f96822!important;
+        border: none;
+        color: white!important;
+    }
+}
+.login-container {
+    display: flex;
+    box-shadow: 4px 8px 30px rgba(141, 141, 141, 0.1);
+    margin: 40px auto;
+    width: 73%;
+    padding: 35px;
+    flex-direction: column;
+    @include respond-to(mobile-small) {
+        width: 100%;
+       }
+}
+.contact-login {
+    margin-bottom: 25px;
+    position: relative;
+    @include respond-to(mobile-small) {
+        margin-bottom: 6px;
+       }
+}
+.password-login {
+    top: 40px;
+    position: absolute;
+    right: 20px;
+    color: grey;
+    @include respond-to(mobile-small) {
+        right: 11px;
+       }
+}
+.checkbox-div {
+    margin: 6px 0 25px;
+}

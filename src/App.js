@@ -1,24 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Header from '../src/components/Header';
+import {Route,Routes} from 'react-router-dom';
+import Authentication from './pages/Authentication';
+import Login from "./components/RegistrationLogin/Login";
+import Register from "./components/RegistrationLogin/Register";
+import Board from './pages/Board';
+import BasicModal from './components/BasicModal';
+import GridList from './pages/GridList';
+import Label from './components/Label';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    {/* <Header /> */}
+    {/* <Authentication/> */}
+      <Routes>
+        <Route path="/login" element={<Authentication />}></Route>
+        <Route path="/register" element={<Authentication />} />
+        <Route path="/board" element={<Board />} />
+        <Route path="/gridList" element={<GridList />} />
+        <Route path="/label" element={<Label />} />
+      </Routes>
+    </>
   );
 }
 

@@ -1,0 +1,38 @@
+@import '../../../src//responsive.scss';
+
+.Details {
+    display: flex;
+    justify-content: space-around;
+}
+.details-left {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+.Details-title {
+    font-weight: 600;
+    font-size: 18px;
+}
+.Details-right{
+    width: 35%;
+    border-left: 1px solid;
+    padding-left: 15px;
+
+    &__content {
+        background: #f9f3f3;
+        // margin-right: 5px;
+        padding: 10px;
+        border-radius: 5px;
+        height: 100%;
+
+        p {
+            font-weight: 600;
+        }
+    }
+}
+.status, .assignee, .priority {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 10px;
+}

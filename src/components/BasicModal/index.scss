@@ -1,0 +1,14 @@
+@import '../../../src//responsive.scss';
+
+.description {
+    margin-bottom: 10px!important;
+}
+.createButn {
+    margin-top: 10px!important;
+    button {
+        width:100%!important;   
+    }
+}
+.error {
+    color: red;
+}

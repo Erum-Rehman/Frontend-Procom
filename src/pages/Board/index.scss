@@ -1,0 +1,43 @@
+@import '../../../src//responsive.scss';
+
+.board {
+    display: flex;
+    margin: 40px;
+    justify-content: space-between;
+}
+.board-heading {
+    font-size: 30px;
+}
+.board-button  {
+    margin-left: 60px;
+    height: auto;
+    width: 12%;
+    min-width: 13%;
+    border: 1px solid #00896f;
+    font-size: 20px;
+    border-radius: 50px;
+    text-align: center;
+    background-color: #00896f;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    margin-top: 2%;
+    @include respond-to(tablet-mini) {
+        width: 18%;
+        margin-left: 30px;
+    }
+    @include respond-to(mobile-small) {
+        width: 35%;
+        margin-top: 37%;
+    }
+    &:hover {
+        background-color: white;
+        color: #00896f;
+    }
+  }
+.board-table {
+    display: flex;
+    border-bottom: 1px solid lightgrey;
+    justify-content: space-between;
+    margin: 0 131px;
+}
